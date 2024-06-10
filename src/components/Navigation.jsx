@@ -28,8 +28,8 @@ function Navigation() {
           {/* <span className="logo-text">techno <span className="logo-highlight">IT</span></span> */}
         </div>
         <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/">Главная</Link></li>
+          <li><Link to="/documents">Services</Link></li>
           <li><Link to="/portfolio">Portfolio</Link></li>
           <li><Link to="/testimonials">Testimonials</Link></li>
           <li><Link to="/team">Team</Link></li>

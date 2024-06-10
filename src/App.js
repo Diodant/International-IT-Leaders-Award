@@ -3,9 +3,9 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navigation from './components/Navigation';
 import MainContent from './components/MainContent';
-// import AboutUs from './components/AboutUs';
-// import MembersPage from './components/MembersPage';
-// import Documents from './components/Documents';
+import AboutUs from './components/AboutUs';
+import Documents from './components/Documents';
+import Regulations from './components/Regulations';
 // import Statute from './components/Statute';
 // import Awards from './components/Awards';
 // import StatutePage from './components/StatutePage';
@@ -26,7 +26,10 @@ function App() {
         <Routes>
         
         <Route path="/" element={<MainContent />} />
-        {/* <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/documents" element={<Documents />} />
+        <Route path="/Regulations" element={<Regulations />} />
+        {/* 
         <Route path="/members" element={<MembersPage />} />
         <Route path="/documents" element={<Documents />} />
         <Route path="/articles" element={<Articles />} />
