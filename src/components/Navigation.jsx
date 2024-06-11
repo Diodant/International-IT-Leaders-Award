@@ -29,9 +29,10 @@ function Navigation() {
         </div>
         <ul className="nav-links">
           <li><Link to="/">Главная</Link></li>
-          <li><Link to="/documents">Services</Link></li>
+          
           <li><Link to="/portfolio">Portfolio</Link></li>
-          <li><Link to="/testimonials">Testimonials</Link></li>
+          <li><Link to="/jury">Жюри</Link></li>
+          <li><Link to="/documents">Документы</Link></li>
           <li><Link to="/team">Team</Link></li>
           <li><Link to="/menu">Menu</Link></li>
           <li><Link to="/news">News</Link></li>

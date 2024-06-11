@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PageHeader from './PageHeader';
 
 const Regulations = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="document-container">
-      <PageHeader title="Положение" subtitle="Положение о проведении конкурса" customBreadcrumb="Положение" />
+      <PageHeader title="Положение" subtitle="International IT Leaders Award" customBreadcrumb="Положение" />
       <div className="document-content">
         <h2>I. Общие положения</h2>
         <p>1.1. Премия International IT Leaders Award (далее – Премия) учреждена и организуется Global Association of IT Experts (GAITE).</p>

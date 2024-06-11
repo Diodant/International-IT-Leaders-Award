@@ -6,8 +6,8 @@ import MainContent from './components/MainContent';
 import AboutUs from './components/AboutUs';
 import Documents from './components/Documents';
 import Regulations from './components/Regulations';
-// import Statute from './components/Statute';
-// import Awards from './components/Awards';
+import EvaluationCriteria from './components/EvaluationCriteria';
+import Jury from './components/Jury';
 // import StatutePage from './components/StatutePage';
 // import Medal from './components/Medal';
 // import Articles from './components/Articles/Articles';
@@ -27,10 +27,12 @@ function App() {
         
         <Route path="/" element={<MainContent />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/jury" element={<Jury />} />
         <Route path="/documents" element={<Documents />} />
-        <Route path="/Regulations" element={<Regulations />} />
+        <Route path="/regulations" element={<Regulations />} />
+        <Route path="/evaluation-criteria" element={<EvaluationCriteria />} />
         {/* 
-        <Route path="/members" element={<MembersPage />} />
+        
         <Route path="/documents" element={<Documents />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/articles/:slug" element={<ArticlesPage />} />
