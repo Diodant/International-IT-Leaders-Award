@@ -439,7 +439,51 @@ a:focus {
   text-align: end;
 }
 
-/* PageHeader */
+/* Sponsors Section */
+.sponsors-section {
+  padding: 40px 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+}
+
+.sponsors-title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #025add;
+  margin-bottom: 40px;
+}
+
+.sponsors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sponsor-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: -1px 5px 20px 0px rgb(82 90 101 / 10%);
+  padding: 20px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.sponsor-card:hover {
+  transform: scale(1.03);
+  box-shadow: -1px 5px 20px 0px rgb(82 90 101 / 15%);
+}
+
+.sponsor-logo {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+}
 
 /* PageHeader */
 
@@ -748,8 +792,6 @@ a:focus {
 
 }
 
-
-
 .jury-photo {
   width: 100%;
   border-radius: 8px;
@@ -767,4 +809,210 @@ a:focus {
   font-size: 16px;
   color: #555;
   margin-bottom: 20px;
+}
+
+/* Winners */
+
+.winners-container {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.winners-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #025add;
+  margin-bottom: 20px;
+}
+
+.winners-buttons {
+  margin-bottom: 20px;
+}
+
+.winners-button {
+  background-color: #fff;
+  border: 2px solid #025add;
+  color: #025add;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.winners-button.active, .winners-button:hover {
+  background-color: #025add;
+  color: #fff;
+}
+
+.winners-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.winner-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  max-width: 300px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-top: 5px solid #025add;
+}
+
+.winner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.winner-category {
+  font-size: 20px;
+  font-weight: 600;
+  color: #025add;
+  margin-bottom: 10px;
+}
+
+.winner-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.winner-country {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.winner-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+/* Contact */
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.contact-info {
+  flex: 1;
+  padding-right: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.contact-info h6 {
+  font-size: 18px;
+  font-weight: 500;
+    line-height: 1.2;
+  color: #3a3a3a;
+  margin: 10px 0;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  color: #333;
+}
+
+
+
+.contact-form-container {
+  flex: 2;
+  box-sizing: border-box;
+}
+
+.contact-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #025add;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-subtitle {
+  font-size: 18px;
+  color: #ffa500;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.thank-you-message {
+  font-size: 20px;
+  color: #025add;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; 
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #025add;
+  outline: none;
+  box-shadow: 0 0 5px rgba(2, 90, 221, 0.5);
+}
+
+.submit-button {
+  background-color: #025add;
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: self-start;
+}
+
+.submit-button:hover {
+  background-color: #003d99;
 }

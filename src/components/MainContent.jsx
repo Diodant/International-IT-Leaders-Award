@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import backgroundImage from '../img/hero-bg.png';
 import ServicesSection from './ServicesSection';
 import Goals from './Goals';
+import ContactUs from './ContactUs';
+import sponsorsData from './sponsorsData';
 
 const MainContent = () => {
   useEffect(() => {
@@ -28,7 +30,7 @@ const MainContent = () => {
         <div className="content-overlay">
           <div className="text-content">
             <h1 className="main-title">International IT Leaders</h1>
-            <p className="sub-title"> Award</p>
+            <p className="sub-title">Award</p>
             <p className="description">Престижная ежегодная международная премия, учрежденная Global Association of IT Experts (GAITE) с целью признания и награждения выдающихся IT-специалистов.</p>
             <div className="buttons">
               <Link to="/about-us" className="button">О премии</Link>
@@ -39,6 +41,17 @@ const MainContent = () => {
       </div>
       <ServicesSection />
       <Goals />
+      <div className="sponsors-section">
+        <h2 className="sponsors-title">Спонсоры</h2>
+        <div className="sponsors-grid">
+          {sponsorsData.map((sponsor, index) => (
+            <div key={index} className="sponsor-card">
+              <img src={sponsor.logo} alt={`Sponsor ${index + 1}`} className="sponsor-logo" />
+            </div>
+          ))}
+        </div>
+      </div>
+      <ContactUs />
     </div>
   );
 };

@@ -30,7 +30,7 @@ function Navigation() {
         <ul className="nav-links">
           <li><Link to="/">Главная</Link></li>
           
-          <li><Link to="/portfolio">Portfolio</Link></li>
+          <li><Link to="/winners">Победители</Link></li>
           <li><Link to="/jury">Жюри</Link></li>
           <li><Link to="/documents">Документы</Link></li>
           <li><Link to="/team">Team</Link></li>
