@@ -1,31 +1,46 @@
 import React, { useState } from 'react';
 import PageHeader from './PageHeader';
-import Jur1 from '../img/1.jpg';
+import Jur1 from '../img/jury/jury1.jpg';
+import Jur2 from '../img/jury/jury2.jpg';
+import Jur3 from '../img/jury/jury3.jpg';
+import Jur4 from '../img/jury/jury4.jpg';
+import Jur5 from '../img/jury/jury5.jpeg';
+import Jur6 from '../img/jury/jury6.jpg';
+import Jur7 from '../img/jury/jury7.jpg';
+import Jur8 from '../img/jury/jury8.jpg';
+import Jur9 from '../img/jury/jury9.jpg';
+import Jur10 from '../img/jury/jury10.jpg';
+import Jur11 from '../img/jury/jury11.jpg';
+import Jur12 from '../img/jury/jury12.jpg';
+import Jur13 from '../img/jury/jury13.jpg';
+import Jur14 from '../img/jury/jury14.jpg';
+import Jur15 from '../img/jury/jury15.jpeg';
+import Jur16 from '../img/jury/jury16.jpg';
 
 const juryData = {
   2021: [
     { name: 'Андрей Иванов', role: 'Основатель и генеральный директор компании XYZ, известной своими инновационными решениями в области облачных технологий.', img: Jur1 },
-    { name: 'Sani Awesome', role: 'Social Media', img: 'path/to/image2.jpg' },
-    { name: 'Andrio Willi', role: 'Content Writer', img: 'path/to/image3.jpg' },
-    { name: 'Afa Jonson', role: 'Business Manager', img: 'path/to/image4.jpg' },
+    { name: 'Ольга Смирнова', role: 'Ведущий специалист по кибербезопасности в компании ABC, внесшая значительный вклад в разработку международных стандартов безопасности.', img: Jur2 },
+    { name: 'Игорь Петров', role: 'Главный инженер-разработчик в компании DEF, автор ряда успешных программных продуктов, используемых по всему миру.', img: Jur3 },
+    { name: 'Екатерина Кузнецова', role: 'Руководитель отдела искусственного интеллекта в компании GHI, известная своими исследованиями и внедрением AI-технологий в различные отрасли.', img: Jur4 },
   ],
   2022: [
-    { name: 'John Doe', role: 'Developer', img: 'path/to/image5.jpg' },
-    { name: 'Jane Smith', role: 'Designer', img: 'path/to/image6.jpg' },
-    { name: 'Mike Brown', role: 'Product Manager', img: 'path/to/image7.jpg' },
-    { name: 'Emily White', role: 'HR Manager', img: 'path/to/image8.jpg' },
+    { name: 'Дмитрий Сидоров', role: 'Технический директор компании JKL, признанный эксперт в области разработки и внедрения высоконагруженных систем.', img: Jur5 },
+    { name: 'Анна Лебедева', role: 'Старший аналитик по кибербезопасности в компании MNO, автор многочисленных публикаций и исследований в области информационной безопасности.', img: Jur6 },
+    { name: 'Павел Воробьев', role: 'Ведущий разработчик программного обеспечения в компании PQR, лауреат нескольких международных премий за вклад в развитие IT.', img: Jur7 },
+    { name: 'Мария Белова', role: 'Директор по научным исследованиям в компании STU, ведущий специалист по искусственному интеллекту и машинному обучению.', img: Jur8 },
   ],
   2023: [
-    { name: 'Chris Green', role: 'IT Specialist', img: 'path/to/image9.jpg' },
-    { name: 'Alex Blue', role: 'Network Engineer', img: 'path/to/image10.jpg' },
-    { name: 'Pat Yellow', role: 'Security Expert', img: 'path/to/image11.jpg' },
-    { name: 'Taylor Purple', role: 'Software Architect', img: 'path/to/image12.jpg' },
+    { name: 'Сергей Михайлов', role: 'Генеральный директор компании VWX, известной своими инновациями в области финтеха и блокчейна.', img: Jur9 },
+    { name: 'Наталья Соколова', role: 'Главный эксперт по кибербезопасности в компании YZA, внесшая значительный вклад в развитие национальной системы защиты данных.', img: Jur10 },
+    { name: 'Алексей Тихонов', role: 'Руководитель отдела разработки в компании BCD, автор нескольких патентов и успешных IT-решений.', img: Jur11 },
+    { name: 'Елена Васильева', role: 'Главный научный сотрудник компании EFG, признанный лидер в области искусственного интеллекта и больших данных.', img: Jur12 },
   ],
   2024: [
-    { name: 'Jordan Pink', role: 'Data Scientist', img: 'path/to/image13.jpg' },
-    { name: 'Casey Black', role: 'DevOps Engineer', img: 'path/to/image14.jpg' },
-    { name: 'Drew Grey', role: 'UX/UI Designer', img: 'path/to/image15.jpg' },
-    { name: 'Sky White', role: 'Full Stack Developer', img: 'path/to/image16.jpg' },
+    { name: 'Виктор Григорьев', role: 'Основатель и CEO компании HIJ, новатор в области облачных технологий и виртуализации.', img: Jur13 },
+    { name: 'Марина Павлова', role: 'Руководитель службы кибербезопасности в компании KLM, эксперт по международным стандартам и защите информации.', img: Jur14 },
+    { name: 'Андрей Зайцев', role: 'Главный инженер в компании NOP, разработчик множества успешных программных продуктов и систем.', img: Jur15 },
+    { name: 'Ольга Титова', role: 'Ведущий исследователь по AI в компании QRS, авторитетный специалист по разработке и внедрению интеллектуальных систем.', img: Jur16  },
   ],
 };
 
@@ -41,6 +56,7 @@ const Jury = () => {
           Жюри конкурса International IT Leaders Award состоит из высококвалифицированных профессионалов с многолетним опытом работы в IT-индустрии (не менее пяти лет). Их экспертиза и достижения в области информационных технологий делают их идеальными кандидатами для оценки и признания выдающихся специалистов. Быть членом жюри International IT Leaders Award - это знак высокого статуса и признания в профессиональном сообществе, который подчеркивает исключительные заслуги и компетентность каждого из них.
         </p>
         <p className="jury-subtitle">Члены жюри тщательно отбираются для обеспечения объективной и всесторонней оценки участников. Они представляют различные направления IT-индустрии, что позволяет учитывать все аспекты и достижения номинантов. Присутствие таких уважаемых профессионалов в составе жюри подчеркивает престиж и значимость премии, делая ее одной из самых уважаемых в мире IT.</p>
+        <p className="jury-subtitle">Каждый из членов жюри обладает уникальными знаниями и опытом, что позволяет обеспечивать высокое качество оценки и признания лучших IT-специалистов СНГ.</p>
         <div className="winners-buttons">
           {[2021, 2022, 2023, 2024].map((yr) => (
             <button key={yr} onClick={() => setYear(yr)} className={`winners-button ${year === yr ? 'active' : ''}`}>

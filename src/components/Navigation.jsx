@@ -25,17 +25,15 @@ function Navigation() {
       <div className="navbar-container">
         <div className="logo">
           <img src={LogoImg} alt="Logo" /> 
-          {/* <span className="logo-text">techno <span className="logo-highlight">IT</span></span> */}
+          
         </div>
         <ul className="nav-links">
           <li><Link to="/">Главная</Link></li>
-          
           <li><Link to="/winners">Победители</Link></li>
           <li><Link to="/jury">Жюри</Link></li>
           <li><Link to="/documents">Документы</Link></li>
-          <li><Link to="/team">Team</Link></li>
-          <li><Link to="/menu">Menu</Link></li>
-          <li><Link to="/news">News</Link></li>
+          <li><Link to="/team">Статьи</Link></li>
+          <li><Link to="/contacts">Контакты</Link></li>
         </ul>
         <div className="buttons">
         <button className="button">Вступить</button>

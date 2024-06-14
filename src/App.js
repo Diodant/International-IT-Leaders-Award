@@ -13,7 +13,7 @@ import Winners from './components/Winners';
 // import Articles from './components/Articles/Articles';
 // import ArticlesPage from './components/Articles/ArticlePage';
 // import Form from './components/Form';
-// import Contacts from './components/Contacts';
+import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -32,6 +32,7 @@ function App() {
         <Route path="/documents" element={<Documents />} />
         <Route path="/regulations" element={<Regulations />} />
         <Route path="/evaluation-criteria" element={<EvaluationCriteria />} />
+        <Route path="/contacts" element={<Contacts />} />
         {/* 
         
         
