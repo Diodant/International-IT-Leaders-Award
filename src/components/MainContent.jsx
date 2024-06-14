@@ -9,11 +9,11 @@ import sponsorsData from './sponsorsData';
 const MainContent = () => {
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = '/particles.js';
+    script.src = `${process.env.PUBLIC_URL}/particles.js`; // Обновите путь к скрипту
     script.async = true;
     script.onload = () => {
       const particlesConfigScript = document.createElement('script');
-      particlesConfigScript.src = '/particlesConfig.js';
+      particlesConfigScript.src = `${process.env.PUBLIC_URL}/particlesConfig.js`; // Обновите путь к скрипту
       particlesConfigScript.async = true;
       document.body.appendChild(particlesConfigScript);
     };
