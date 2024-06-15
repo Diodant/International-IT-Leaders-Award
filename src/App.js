@@ -9,22 +9,18 @@ import Regulations from './components/Regulations';
 import EvaluationCriteria from './components/EvaluationCriteria';
 import Jury from './components/Jury';
 import Winners from './components/Winners';
-// import Medal from './components/Medal';
-// import Articles from './components/Articles/Articles';
-// import ArticlesPage from './components/Articles/ArticlePage';
-// import Form from './components/Form';
+import ArticlesList from './components/ArticlesList';
+import Article from './components/Article';
+import JoinForm from './components/JoinForm';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 import './App.css';
-
 
 function App() {
   return (
     <Router>
       <Navigation />
-
-        <Routes>
-        
+      <Routes>
         <Route path="/" element={<MainContent />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/jury" element={<Jury />} />
@@ -32,20 +28,11 @@ function App() {
         <Route path="/documents" element={<Documents />} />
         <Route path="/regulations" element={<Regulations />} />
         <Route path="/evaluation-criteria" element={<EvaluationCriteria />} />
+        <Route path="/articles" element={<ArticlesList />} />
+        <Route path="/articles/:id" element={<Article />} />
+        <Route path="/join" element={<JoinForm />} />
         <Route path="/contacts" element={<Contacts />} />
-        {/* 
-        
-        
-        <Route path="/articles" element={<Articles />} />
-        <Route path="/articles/:slug" element={<ArticlesPage />} />
-        <Route path="/statute" element={<Statute />} />
-        <Route path="/awards" element={<Awards />} />
-        <Route path="/medal" element={<Medal />} />
-        <Route path="/form" element={<Form />} />
-        <Route path="/statutepage" element={<StatutePage />} />
-        <Route path="/contacts" element={<Contacts />} /> */}
-        </Routes>
-
+      </Routes>
       <Footer />
     </Router>
   );

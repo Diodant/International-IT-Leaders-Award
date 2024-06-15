@@ -32,11 +32,11 @@ function Navigation() {
           <li><Link to="/winners">Победители</Link></li>
           <li><Link to="/jury">Жюри</Link></li>
           <li><Link to="/documents">Документы</Link></li>
-          <li><Link to="/team">Статьи</Link></li>
+          <li><Link to="/articles">Статьи</Link></li>
           <li><Link to="/contacts">Контакты</Link></li>
         </ul>
         <div className="buttons">
-        <button className="button">Вступить</button>
+        <Link to="/join" className="button">Вступить</Link>
         </div>
       </div>
     </nav>
