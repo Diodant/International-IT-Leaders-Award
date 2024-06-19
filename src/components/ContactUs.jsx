@@ -27,11 +27,13 @@ const ContactUs = () => {
     <div className="contact-container">
       <div className="contact-info">
         <h6>Адрес:</h6>
-        <p> 198826, Россия, Москва г., Филимонковское п., д. Бурцево, пер. 5-й Новобурцевский, д. 15</p>
+        <p> 198826, Россия, Москва, поселение Филимонковское, деревня Бурцево, 5-й Новобурцевский переулок, дом 15</p>
         <h6>ИНН/КПП:</h6>
         <p> 7720859286/775101001</p>
         <h6>Телефон:</h6>
         <p> +7(499) 290-5005</p>
+        <h6>Email:</h6>
+        <p>itleadersaward@gmail.com</p>
       </div>
       <div className="contact-form-container">
         <h2 className="contact-title">Свяжитесь с нами</h2>
