@@ -36,7 +36,8 @@ function Navigation() {
           <li><Link to="/contacts">Контакты</Link></li>
         </ul>
         <div className="buttons">
-        <Link to="/join" className="button">Вступить</Link>
+        {/* <Link to="/join" className="button">Вступить</Link> */}
+        <Link to="/join" className="button">Подать заявку</Link>
         </div>
       </div>
     </nav>

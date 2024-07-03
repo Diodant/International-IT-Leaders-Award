@@ -34,7 +34,8 @@ const MainContent = () => {
             <p className="description">Престижная ежегодная международная премия, учрежденная Global Association of IT Experts (GAITE) с целью признания и награждения выдающихся IT-специалистов.</p>
             <div className="buttons">
               <Link to="/about-us" className="button">О премии</Link>
-              <Link to="/join" className="button">Вступить</Link>
+              {/* <Link to="/join" className="button">Вступить</Link> */}
+              <Link to="/join" className="button">Подать заявку</Link>
             </div>
           </div>
         </div>
