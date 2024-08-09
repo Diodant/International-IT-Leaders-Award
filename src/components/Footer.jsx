@@ -36,7 +36,7 @@ const Footer = () => {
             <h4>Контакты</h4>
             <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Россия, Москва г., Филимонковское </p>
             <p><FontAwesomeIcon icon={faPhone} /> +7(499) 290-5005</p>
-            <p className='mb-20'><FontAwesomeIcon icon={faEnvelope} /> itleaders@gmail.com</p>
+            <p className='mb-20'><FontAwesomeIcon icon={faEnvelope} /> itleadersaward@gmail.com</p>
             <h4>Подписаться</h4>
             <p>Не упустите возможность подписаться на наши новости</p>
             <form className="newsletter-form">

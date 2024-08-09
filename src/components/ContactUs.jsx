@@ -33,7 +33,7 @@ const ContactUs = () => {
         <h6>Телефон:</h6>
         <p> +7(499) 290-5005</p>
         <h6>Email:</h6>
-        <p>itleaders@gmail.com </p>
+        <p>itleadersaward@gmail.com</p>
       </div>
       <div className="contact-form-container">
         <h2 className="contact-title">Свяжитесь с нами</h2>
