@@ -720,7 +720,7 @@ a:focus {
   list-style: none;
   padding-left: 0;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 20px;
   color: #333;
 }
 
@@ -745,6 +745,33 @@ a:focus {
 
 .document-content ul li strong {
   color: #333;
+}
+
+.art-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.art-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.art-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #025add;
+  border-radius: 50%;
 }
 
 /* Jury  */
@@ -985,7 +1012,7 @@ a:focus {
 .article-page-author, .article-page-date {
   color: #666;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
 .article-page-author {
